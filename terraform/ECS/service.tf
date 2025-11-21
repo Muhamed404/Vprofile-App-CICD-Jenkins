@@ -1,4 +1,4 @@
-resource "aws_ecs_service" "backend" {
+resource "aws_ecs_service" "vprofile-svc" {
   name            = "${var.CLUSTER_NAME}-service"
   cluster         = aws_ecs_cluster.vprofile-cluster.id
   task_definition = aws_ecs_task_definition.vprofile-task_definition.arn

@@ -5,8 +5,14 @@ variable "AWS_REGION" {
 
 
 variable "CLUSTER_NAME" {
-  default = "vprofile-test-RUNID"
+  type = string
 }
+
+variable "CONTAINER_NAME" {
+    type = string
+  
+}
+
 
 variable "TASK_ECECUTION_ROLE_ARN" {
     default = "arn:aws:iam::441160708640:role/ecsTaskExecutionRole"
@@ -14,10 +20,7 @@ variable "TASK_ECECUTION_ROLE_ARN" {
 }
 
 
-variable "CONTAINER_NAME" {
-    default = "vprofile-tomcat-RUNID"
-  
-}
+
 
 variable "CONTAINER_IMAGE" {
     default = "441160708640.dkr.ecr.us-east-1.amazonaws.com/vprofile-app:latest"
