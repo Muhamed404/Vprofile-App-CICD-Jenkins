@@ -13,6 +13,11 @@ variable "CONTAINER_NAME" {
   
 }
 
+variable "CONTAINER_IMAGE" {
+    type = string
+  
+}
+
 
 variable "TASK_ECECUTION_ROLE_ARN" {
     default = "arn:aws:iam::441160708640:role/ecsTaskExecutionRole"
@@ -21,32 +26,6 @@ variable "TASK_ECECUTION_ROLE_ARN" {
 
 
 
-
-variable "CONTAINER_IMAGE" {
-    default = "441160708640.dkr.ecr.us-east-1.amazonaws.com/vprofile-app:latest"
-  
-}
-
-
-variable "RDS_USERNAME" {
-    default = "admin"
-  
-}
-
-variable "RDS_PASSWORD" {
-    default = "ZCy4mYHcEdZFiKd0rB0d"
-  
-}
-
-variable "RABBITMQ_USERNAME" {
-    default = "rabbit"
-  
-}
-
-variable "RABBITMQ_PASSWORD" {
-    default = "WeListen2025"
-  
-}
 
 variable "LOG_GROUP_NAME" {
     default = "/ecs/vprofile/"
