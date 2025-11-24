@@ -4,7 +4,7 @@ variable "AWS_REGION" {
   default = "us-east-1"
 }
 
-variable "ENV_NAME" {
+variable "BEANSTACK_ENV_NAME" {
   type = string
 }
 
