@@ -1,5 +1,5 @@
 resource "aws_elastic_beanstalk_environment" "vprofile-bean" {
-  name                = var.ENV_NAME
+  name                = var.BEANSTACK_ENV_NAME
   application         = "vprofile-app"
   solution_stack_name = "64bit Amazon Linux 2023 v5.7.2 running Tomcat 10 Corretto 21"
 
