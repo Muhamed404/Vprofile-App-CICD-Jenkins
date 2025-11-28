@@ -12,7 +12,7 @@ VERSION_LABEL="vprofile-${RUN_ID}"
 
 
 # Upload new WAR
-aws s3 cp vprofile-v2.war s3://$BUCKET/$S3_KEY
+aws s3 cp ../../vprofile-v2.war s3://$BUCKET/$S3_KEY
 
 
 # Create new application version
